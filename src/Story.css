@@ -27,5 +27,22 @@
 .story-info p {
   font-weight: lighter;
   line-height: 150%;
-  margin: 0;
+  margin: 0px 0px 0px 5px;
+}
+
+@media screen and (max-width: 1200px){
+  .Story {
+    min-width: 95%;
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .story-info h3 {
+    font-size: 14px;
+  }
+
+  .story-info p {
+    font-size: 12px;
+  }
 }

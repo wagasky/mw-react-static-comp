@@ -13,9 +13,19 @@ const Stories = (props) => {
         {
           props.stories.map( (story, index) => {
             console.log(story);
+            <Story />
             // INSTEAD OF returning the div below, return a Story component
             // Be sure to pass down the correct props!
-            return (<div>{story.title}</div>)
+            return (
+              <Story 
+                title={story.title} 
+                desc={story.desc} 
+                img={story.img} 
+                authName={story.authName} 
+                authImg={story.authImg} 
+                estTime={story.estTime} 
+              />
+            )
           })
         }
       </div>
